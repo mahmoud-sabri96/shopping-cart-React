@@ -9,10 +9,10 @@ import { useDispatch } from 'react-redux';
 
 
 function App() {
-  const navigate = useNavigate()
-  useEffect(() => {
-    navigate("/")
-  }, []);
+  // const navigate = useNavigate()
+  // useEffect(() => {
+  //   navigate("/")
+  // }, []);
 
 
   return (
