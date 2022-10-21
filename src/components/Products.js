@@ -10,7 +10,6 @@ const Products = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
 
-  console.log(products)
 
   useEffect(() => {
     dispatch(fetchProducts())
