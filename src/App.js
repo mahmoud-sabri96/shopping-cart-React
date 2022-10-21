@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AppNavbar from './components/AppNavbar';
 import Cart from './components/Cart';
@@ -9,10 +8,6 @@ import Products from './components/Products';
 
 
 function App() {
-  const navigate = useNavigate()
-  useEffect(() => {
-    navigate("/")
-  }, [navigate]);
 
 
   return (
