@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Button, ButtonToolbar, Image, Table } from 'react-bootstrap';
+import React from 'react'
+import { Button, Image, Table} from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { clear, removeFromCart } from '../rtk/slices/cart-slice';
 

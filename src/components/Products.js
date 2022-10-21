@@ -13,7 +13,7 @@ const Products = () => {
 
   useEffect(() => {
     dispatch(fetchProducts())
-  }, []);
+  }, [dispatch]);
 
 
   return (

@@ -5,7 +5,7 @@ import AppNavbar from './components/AppNavbar';
 import Cart from './components/Cart';
 import Products from './components/Products';
 // import { fetchProducts } from './rtk/slices/products-slice';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 
 
 function App() {
