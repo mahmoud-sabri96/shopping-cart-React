@@ -4,21 +4,15 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './rtk/store';
-import Products from './components/Products';
-import Cart from './components/Cart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <App />
-        <Routes>
-        <Route path="/" element={<Products />} />
-        <Route path="cart" element={<Cart />} />
-      </Routes>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>

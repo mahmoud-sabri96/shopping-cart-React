@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AppNavbar from './components/AppNavbar';
 import Cart from './components/Cart';
@@ -13,11 +13,16 @@ function App() {
   return (
     <div className="App">
       <AppNavbar />
-      <Products/>
-      {/* <Routes>
-        <Route path="/" element={<Products />} />
-        <Route path="cart" element={<Cart />} />
-      </Routes> */}
+      <Outlet />
+      <Routes>
+        <Route path='/' element={<><Outlet /></>}>
+          <Route path="" element={<Products />} />
+          <Route path="cart" element={<Cart />} />
+        </Route>
+
+        {/* <Route path="/" element={<Products />} />
+        <Route path="cart" element={<Cart />} /> */}
+      </Routes>
     </div>
   );
 }
