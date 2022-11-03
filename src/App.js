@@ -16,6 +16,7 @@ function App() {
       <Outlet />
       <Routes>
         <Route path='/' element={<><Outlet /></>}>
+          <Route path="shopping-cart-React" element={<Products />} />
           <Route path="" element={<Products />} />
           <Route path="cart" element={<Cart />} />
         </Route>
